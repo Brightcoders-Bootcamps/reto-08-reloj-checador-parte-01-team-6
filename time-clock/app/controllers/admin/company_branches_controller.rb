@@ -1,4 +1,4 @@
-class CompanyBranchesController < ApplicationController
+class Admin::CompanyBranchesController < Admin::ApplicationController
   before_action :set_company_branch, only: [:show, :edit, :update, :destroy]
 
   # GET /company_branches
@@ -28,7 +28,7 @@ class CompanyBranchesController < ApplicationController
 
     respond_to do |format|
       if @company_branch.save
-        format.html { redirect_to @company_branch, notice: 'Company branch was successfully created.' }
+        format.html { redirect_to admin_company_branches_path, notice: 'Company branch was successfully created.' }
         format.json { render :show, status: :created, location: @company_branch }
       else
         format.html { render :new }
@@ -42,7 +42,7 @@ class CompanyBranchesController < ApplicationController
   def update
     respond_to do |format|
       if @company_branch.update(company_branch_params)
-        format.html { redirect_to @company_branch, notice: 'Company branch was successfully updated.' }
+        format.html { redirect_to admin_company_branches_path, notice: 'Company branch was successfully updated.' }
         format.json { render :show, status: :ok, location: @company_branch }
       else
         format.html { render :edit }
@@ -56,7 +56,7 @@ class CompanyBranchesController < ApplicationController
   def destroy
     @company_branch.destroy
     respond_to do |format|
-      format.html { redirect_to company_branches_url, notice: 'Company branch was successfully destroyed.' }
+      format.html { redirect_to admin_company_branches_url, notice: 'Company branch was successfully destroyed.' }
       format.json { head :no_content }
     end
   end

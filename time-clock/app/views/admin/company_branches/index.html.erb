@@ -16,9 +16,9 @@
       <tr>
         <td><%= company_branch.name %></td>
         <td><%= company_branch.address %></td>
-        <td><%= link_to 'Show', company_branch %></td>
-        <td><%= link_to 'Edit', edit_company_branch_path(company_branch) %></td>
-        <td><%= link_to 'Destroy', company_branch, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'Show', admin_company_branch_path(company_branch) %></td>
+        <td><%= link_to 'Edit', edit_admin_company_branch_path(company_branch) %></td>
+        <td><%= link_to 'Destroy', admin_company_branch_path(company_branch), method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
   </tbody>
@@ -26,4 +26,4 @@
 
 <br>
 
-<%= link_to 'New Company Branch', new_company_branch_path %>
+<%= link_to 'New Company Branch', new_admin_company_branch_path %>

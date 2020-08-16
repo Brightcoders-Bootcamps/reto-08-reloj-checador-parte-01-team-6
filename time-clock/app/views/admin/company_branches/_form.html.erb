@@ -1,4 +1,4 @@
-<%= form_with(model: company_branch, local: true) do |form| %>
+<%= form_for([:admin, @company_branch]) do |form| %>
   <% if company_branch.errors.any? %>
     <div id="error_explanation">
       <h2><%= pluralize(company_branch.errors.count, "error") %> prohibited this company_branch from being saved:</h2>
