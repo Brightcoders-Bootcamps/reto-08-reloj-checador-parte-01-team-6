@@ -9,5 +9,6 @@ Rails.application.routes.draw do
     get 'dashboard', to: 'dashboard#index'
     resources :company_branches
     resources :employees
+    get 'reports', to: 'reports#index'
   end
 end
