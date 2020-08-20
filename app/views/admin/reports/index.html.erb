@@ -1,3 +1,22 @@
 <h1> Attendance by day </h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Private number</th>
+      <th>Employ Name</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @attendance_by_the_day.each do |attendance| %>
+      <tr>
+        <td><%= attendance.private_number %></td>
+        <td><%= attendance.employee.name %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
 <h1> Average time employees checked in/out by month </h1>
 <h1> Absence report by month </h1>
