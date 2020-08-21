@@ -75,3 +75,14 @@ En [este elnace](setup/README.md) se describen los pasos necesarios para ejecuta
 
 ## Enlaces
 [Encuentra aquí una lista completa de recursos de ayuda](https://github.com/bright-coders/commons/tree/master/topics/resources)
+
+
+## datos para ingresar a la app
+User.create(email: 'admin@admin.com', password: 'admin123')
+
+## url 
+https://ancient-crag-11045.herokuapp.com/users/sign_in
+
+https://ancient-crag-11045.herokuapp.com/
+
+https://ancient-crag-11045.herokuapp.com/admin/company_branches/new
