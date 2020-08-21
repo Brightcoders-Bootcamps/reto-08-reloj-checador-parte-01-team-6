@@ -78,6 +78,9 @@ En [este elnace](setup/README.md) se describen los pasos necesarios para ejecuta
 
 
 ## datos para ingresar a la app
+
+https://ancient-crag-11045.herokuapp.com/users/sign_in
+
 User.create(email: 'admin@admin.com', password: 'admin123')
 
 ## url 
