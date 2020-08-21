@@ -12,11 +12,11 @@
     <% @attendance_by_the_day.each do |attendance| %>
       <tr>
         <td><%= attendance.private_number %></td>
-        <td><%= attendance.employee.name %></td>
+        <td><%= attendance.employee.name %></td> 
       </tr>
     <% end %>
   </tbody>
 </table>
 
 <h1> Average time employees checked in/out by month </h1>
-<h1> Absence report by month </h1>
+<h1><%= @average_time.values.sum / @average_time.size %></h1>
